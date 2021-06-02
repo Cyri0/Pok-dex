@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+:root {
+  --pokedex-color: rgb(202, 67, 67);
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(44, 44, 44);
+}
+
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: var(--pokedex-color);
+  padding: 20px;
+}
+
+#img_holder {
+  background-color: white;
+  width: 80%;
+  margin: 50px auto;
+}
+
+#img_holder img {
+  width: 100%;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+#pokemons {
+  margin: auto;
+  display: block;
+}
+
+h1#name {
+  color: white;
+  font-family: "VT323", monospace;
+  font-size: 4rem;
+}
+
+span {
+  font-family: "VT323", monospace;
+  color: white;
+  font-size: 2rem;
+}
+
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+ul li {
+  font-family: "VT323", monospace;
+  color: white;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 5px;
+  border: 5px solid var(--pokedex-color);
+  text-align: center;
+}
+
+.normal {
+    background-color: gray;
+}
+.fighting {
+    background-color: rgb(31, 31, 31);
+}
+.flying {
+    background-color: rgb(97, 216, 225);
+}
+.poison {
+    background-color: rgb(75, 224, 99);
+}
+.ground {
+    background-color: rgb(158, 92, 30);
+}
+.rock {
+    background-color: rgb(80, 49, 0);
+}
+.bug {
+    background-color: rgb(233, 125, 53);
+}
+.ghost {
+    background-color: rgb(207, 30, 198);
+}
+.steel {
+    background-color: rgb(146, 146, 146);
+}
+.fire {
+    background-color: rgb(246, 130, 21);
+    color: rgb(255, 231, 13);
+}
+.water {
+    background-color: rgb(84, 93, 221);
+}
+.grass {
+    background-color: rgb(31, 149, 26);
+}
+.electric {
+    background-color: rgb(0, 217, 255);
+}
+.psychic {
+    background-color: rgb(172, 97, 159);
+}
+.ice {
+    background-color: rgb(150, 215, 219);
+    color: darkblue;
+}
+.dragon {
+    background-color: rgb(110, 4, 197);
+}
+.dark {
+    background-color: rgb(0, 0, 0);
+}
+.fairy {
+    background-color: rgb(248, 172, 255);
+    color: purple;
+}

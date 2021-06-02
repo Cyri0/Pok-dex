@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <br>
+                <select name="pokemon" id="pokemons" onchange="loadActualPokemon()"></select>    
+                <div id="img_holder"></div>
+                <ul id="types"></ul>
+            </div>
+            <div class="col-sm-8">
+                <h1 id="name">Sample</h1>
+
+                <span>Élet</span>
+                <div class="progress">
+                    <div id="hp" style="width: 25%;" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="300"></div>
+                </div>
+
+                <span>Támadás</span>
+                <div class="progress">
+                    <div id="attack" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="300"></div>
+                </div>
+
+                <span>Védekezés</span>
+                <div class="progress">
+                    <div id="defense" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="300"></div>
+                </div>
+
+                <span>Sebesség</span>
+                <div class="progress">
+                    <div id="speed" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="300"></div>
+                </div>
+
+                <span>Speciális támadás</span>
+                <div class="progress">
+                    <div id="special-attack" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="300"></div>
+                </div>
+
+                <span>Speciális védekezés</span>
+                <div class="progress">
+                    <div id="special-defense" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="300"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
